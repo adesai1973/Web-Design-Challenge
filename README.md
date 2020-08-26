@@ -1,3 +1,11 @@
+Homework Part-1: https://github.com/adesai1973/Web-Design-Challenge/tree/master/WebVisualizations
+Homework Part-1:  Followed instructions to build bootstrap website as close to asked by the instructor. Used my own charts from previous homework instead of provided assets.
+
+Homework Part-2 (BONUS): https://github.com/adesai1973/Web-Design-Challenge/tree/master/WebVisualizations%20Bootswatch
+Homework Part-2 (BONUS): Used previous homework data from SQLAlchemy ORM and its plots to create a website for Hawaii. Used Bootswatch Theme/colors, used FontAwesome for icons, used fun data from Hawaii and pictures and put in on site along with Bootstrap Cards, Progress Bars and Jumbotron.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
 ## Background
