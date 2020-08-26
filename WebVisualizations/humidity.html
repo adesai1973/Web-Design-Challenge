@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us" class="h-100">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Humidity</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+      <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="sticky-footer-navbar.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light mt-0 mb-0 pt-0 pb-0">
+            <div class="topnav">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+              <a class="navbar-brand" href="index.html"><img src="./Images/lattitude.png" height="50" class="d-inline-block align-center" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link " href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html" tabindex="-1" aria-disabled="true">Data</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </header>
+      
+      <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <div><br><br><br><br></div>
+        <div class="container-fluid">
+            <div class="row" style="margin: auto">       
+                <div class="col-md-8">
+                    <div class="box skywhite">
+                        <h2 class="color_cyan">Humidity vs. Latitude</h2>
+                        <hr>
+                        <img class="float-top img-fluid textWrapFull" src="Images/LatitudeVsHumidity.png" alt="humidity plot">
+                        <p>This plot shows Humidities of cities versus it's latitudes.</p>
+                        <p>Cities do not show any direct correlation with latitudes. In the polar regions, temperatures are low, 
+                          dew point temperatures are also low, and relative humidity is high. The air in polar regions is usually 
+                          around 80% saturated. Even though the water vapor content of the air is low, the water vapor capacity is 
+                          low as well. Saturation occurs in air that holds very little water vapor even when the air is relatively 
+                          dry. As a consequence, the relative humidity is higher at polar regions than at 30 deg latitude, while the 
+                          specific humidity is higher at 30deg  than at polar regions. Not all regions of the earth around 30 deg latitude 
+                          are desert. As one traverses 30 deg of latitude across the continental United States, one notices a distinct 
+                          difference between the climate of Arizona and that of Alabama. The air masses that prevail over the 
+                          western deserts of the U.S. come from the Pacific Ocean. The Pacific Ocean is normally very cool. Air over 
+                          the Pacific is also cool. As westerly winds move this air over land, its temperature increases but its 
+                          water vapor content does not. Hence the air over the western deserts has a high temperature but a low dew 
+                          point and very low relative humidity. The Gulf of Mexico, on the other hand, is quite a bit warmer as is 
+                          the air over it. When this air moves over the southeastern U.S. it warms only a little while maintaining 
+                          the same water vapor content. The air and dew point temperatures are very close and the relative humidity 
+                          is consequently quite high. This is why the southwest U.S. is normally hot and dry while the southeast is 
+                          hot and muggy.</p>                        
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="box skywhite">
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-12">
+                                <h2 class="color_cyan">Visualizations</h2>
+                                <hr>
+                            </div>                            
+                        </div>
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-6">
+                                <a class="cyan_pic" href="temperature.html"><img class="float-left img-fluid" src="Images/LatitudeVsMaxTemp.png" alt="plot image"></a>
+                            </div>
+                            <div class="col-md-6">
+                              <a class="cyan_pic" href="humidity.html"><img class="float-left img-fluid" src="Images/LatitudeVsHumidity.png" alt="plot image"></a>
+                            </div>
+                        </div>
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-6">
+                              <a class="cyan_pic" href="cloudiness.html"><img class="float-left img-fluid" src="Images/LatitudeVsCloudiness.png" alt="plot image"></a>
+                            </div>
+                            <div class="col-md-6">
+                              <a class="cyan_pic" href="windspeed.html"><img class="float-left img-fluid" src="Images/LatitudeVsWindSpeed.png" alt="plot image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class='row'>
+        <div class='col-lg-12 col-lg-offset-2'><hr></div>
+    </div>
+    <footer class="footer mt-auto text-center py-3">
+        <div class="container">          
+          <span class="text">&#169; Copyright Univ of Arizona Data Analytics Bootcamp 2020</span>
+        </div>
+    </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

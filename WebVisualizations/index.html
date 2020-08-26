@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us" class="h-100">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>World Cities Weather</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+      <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="sticky-footer-navbar.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light mt-0 mb-0 pt-0 pb-0">
+            <div class="topnav">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+              <a class="navbar-brand" href="index.html"><img src="./Images/lattitude.png" height="50" class="d-inline-block align-center" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html" tabindex="-1" aria-disabled="true">Data</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </header>
+      
+      <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <div><br><br><br><br></div>
+        <div class="container-fluid">
+            <div class="row" style="margin: auto">       
+                <div class="col-md-8">
+                    <div class="box skywhite">
+                        <h2 class="color_cyan">Summary: Latitude vs. X</h2>
+                        <hr>
+                        <img class="float-left img-fluid textWrap" src="Images/LatitudeVsMaxTemp.png" alt="sample image">
+                        <p>The purpose of this project is to see how weather changes as you get closer to equator. To accomplish this analysis we first pulled data from OpenWeatherMap API to assemble the dataset over 500 cities.</p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of weather vs latitude. Factors we included were Max Temperture, Humidity, Wind Speed and Cloudiness. This site provides the datsource, plots and analysis.</p>
+                        <p>The top navigation drop down menu "Plots" shows the individual weather parameter plots vs latitude</p>
+                        <p>The top navigation menu item "Comparison" shows all the 4 individual weather parameter plots vs latitude</p>
+                        <p>The top navigation menu "Data" shows the raw data that was used to plot.</p>  
+                        <p>The right section of this page had links to the 4 visualizations analyzed on this website.</p> 
+                        <img class="float-right img-fluid textWrap" src="Images/world_map_zones.jpg" alt="world zones image"> 
+                        <p>The world zone map shows the three climate zones. The cities weather data gets not only affected by latitude but also
+                          by parameters like temperature of oceans, the wind patterns, land masses and altitudes.</p> 
+                        <h5>What Are Latitude and Longitude?</h5>
+                        <p>Any point on the surface of the Earth can be defined by a pair of angular coordinates known as longitude and latitude. 
+                          Longitude is a line stretching from pole to pole with a given angular displacement from the Prime Meridian, which runs 
+                          through Greenwich, England. Latitude is defined as the angular distance from the equator and is designated North or South 
+                          depending on the hemisphere. The equator defines zero degrees latitude, which locates the North and South Poles at 90 degrees 
+                          North and South respectively.</p>
+                        <p><a href="https://www.nationalgeographic.org/activity/latitude-longitude-temperature/"> National Geographic</a> is a great resource to study weather.</p>
+                                             
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="box skywhite">
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-12">
+                                <h2 class="color_cyan">Visualizations</h2>
+                                <hr>
+                            </div>                            
+                        </div>
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-6">
+                                <a class="cyan_pic" href="temperature.html"><img class="float-left img-fluid" src="Images/LatitudeVsMaxTemp.png" alt="sample image"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="cyan_pic" href="humidity.html"><img class="float-left img-fluid" src="Images/LatitudeVsHumidity.png" alt="plot image"></a>
+                            </div>
+                        </div>
+                        <div class="row" style="margin: auto"> 
+                            <div class="col-md-6">
+                                <a class="cyan_pic" href="cloudiness.html"><img class="float-left img-fluid" src="Images/LatitudeVsCloudiness.png" alt="plot image"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="cyan_pic" href="windspeed.html"><img class="float-left img-fluid" src="Images/LatitudeVsWindSpeed.png" alt="plot image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class='row'>
+        <div class='col-lg-12 col-lg-offset-2'><hr></div>
+    </div>
+    <footer class="footer mt-auto text-center py-3">
+        <div class="container">          
+          <span class="text">&#169; Copyright Univ of Arizona Data Analytics Bootcamp 2020</span>
+        </div>
+    </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

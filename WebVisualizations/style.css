@@ -1,0 +1,61 @@
+/* We're working with the body tag, and so with the WHOLE page */
+body
+{
+    background-color: #DFE1E2; 
+    color: gray;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif
+}
+
+span {
+    color: #ffffff;
+    text-align: center;
+}
+
+.box {
+    min-height: 50px;
+    padding: 20px;
+    margin: 10px;
+    color: #555555;
+}
+
+.skywhite {
+    background: white;
+}
+
+.textWrap {
+    float: left;
+    margin: 10px;
+    max-width: 40%
+}
+
+.textWrapFull {
+    float: top;
+    margin: 10px;
+    width: 1000px;
+    max-width: 90%
+}
+
+.navbar-brand {
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+a img:hover {
+    border: 2px solid #1ECDC0;
+}
+
+a img{
+    border: 0px solid #1ECDC0;
+}
+
+.color_cyan {
+    color: #1ECDC0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.color_cyan_h5 {
+    color: #1ECDC0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
